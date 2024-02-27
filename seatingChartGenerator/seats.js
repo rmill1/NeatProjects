@@ -52,25 +52,25 @@ function getRoster(block) {
     // let rosterB = ['Ro', 'Elise', 'Taisei', 'Margaret', 'Avi', 'Lillie', 'JJ', 'Teddy', 'Chase', 'David', 'Rowan', 'Kaya', 'Alex', 'Sudiksha', 'Vivienne', 'Lucy']
     
     // C PERIOD
-    let rosterC = ['Walker', 'Graham', 'Ethan', 'Logan', 'Brayden', 'Aanika', 'Evie', 'Sanvi', 'George', 'Ben', 'Teddy', 'Emerson', 'Nora', 'Dash', 'Isabella', '\n', '\n', '\n', '\n', '\n']
+    let rosterC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', '\n', '\n', '\n', '\n', '\n']
 
     
     
     // D PERIOD - Q3
-    let rosterD = ['Garrick', 'Kate', 'Kinsely', 'Carlos', 'Max', 'Sam', 'James', 'Tyler', 'Izzy H', 'Izzy K', 'Laura', 'Alexandra', 'Alyssa', 'Willow', 'Ruby', 'Connor', 'Chase', 'Alex', '\n', '\n']
+    let rosterD = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', '\n', '\n']
   
  
     
     // E PERIOD - Q3
-    let rosterE = ['Finn', 'Oscar', 'Kyra', 'Miller', 'Hugo', 'Simone', 'Madeleine', 'Maxwell', 'Hal', 'Isabel', 'Quinn', 'Jacie', 'Carrigan', 'Hans', 'Isabelle', 'Ollie', 'Elodie', 'James', '\n', '\n']
+    let rosterE = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', '\n', '\n']
     
 
     // F PERIOD - Q3
-    let rosterF = ['B', 'Liam', 'Katie', 'Noah', 'Natalie', 'Bjorn', 'Signe', 'Julian', 'Aaron', 'Yara', 'Michael', 'Declan', 'Pedro', 'Lena', 'Sophia']
+    let rosterF = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', '\n', '\n', '\n', '\n', '\n']
 
 
     // H PERIOD - Q3
-    let rosterH = ['Will', 'Henry', 'Aiyana', 'Sam B', 'Lauren', 'Sawyer', 'Eleanor', 'Keya', 'Dahlia', 'Sam M', 'Josset', 'Alia', 'Catherine', 'Crawford', 'Cy', 'Marian', 'Garrett', 'Lilly', 'Maddie', '\n']
+    let rosterH = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', '\n']
     
     // call generateSeatingChart with correct roster
     if(block == 'c'){
