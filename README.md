@@ -5,7 +5,7 @@ Ranging from silly and fun to actually quite useful in the varioius roles I've h
 ## The Projects
 
 1. Masterpiece Scoring Calculator 
-* Built this during the 2023-2024 FLL Robotics season when the official calculator wasn't working
+..* Built this during the 2023-2024 FLL Robotics season when the official calculator wasn't working
 * HTML/CSS/JavaScript/Bootstrap
 2. Bootstrap Styling Examples 
 * I wanted to make a point to some students I was teaching that you can actually do A LOT with Bootstrap styling
