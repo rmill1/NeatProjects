@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Masterpiece Scoring Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    
+    <body class="bg-primary">
+        <!-- Fixed navbar with scorer -->
+        <nav id="title" class="row navbar navbar-expand-md navbar-light fixed-top bg-light">
+            <div class="col-6">
+                <h1>Masterpiece Scoring Calculator</h1>
+            </div>
+            <div class="col-3">
+                <h2 id="results" class="text-end">Score:</h2>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-1 calculateDiv">
+                <button type="button" id="calculate" class="btn btn-dark">Calculate</button>
+            </div>
+        </nav>
+        
+        <!--Start of container -->
+        <div class="container">
+            <!-- EIB -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>EIB</h2>
+                </div>
+                <div class='col-10'>
+                    <div class='row'>
+                        <h2>EQUIPMENT BONUS 🛠</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                             <p>All team equipment fits in one launch area and under 12 in. (305 mm)</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="eib_no" name="eib" value="0" class="checkbox">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="eib_yes" name="eib" value="20" checked="checked">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 1 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M01</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>3D CINEMA 🐉</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The 3D cinema's red beam is completely to the right of the black frame</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="1_no" name="m01" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="1_yes" name="m01" value="20">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 2-->
+            <div class="row outer bg-primary-subtle bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M02</h2>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <h2>THEATRE SCENE CHANGE 🎭</h2>
+                    </div>
+                    <div class="row">
+                        <div class='col-7'>
+                            <p>Your theater's red flag is down and the active scene color is</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="2_no" name="m02" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="2_blue" name="m02" value="10">
+                                <span>Blue</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="2_pink" name="m02" value="20">
+                                <span>Pink</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="2_orange" name="m02" value="30">
+                                <span>Orange</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <p>Both teams' active scenes match</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="as_no" name="as" value="No" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="as_yes" name="as" value="Yes">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 3 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M03</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>IMMERSIVE EXPERIENCE 💜</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The three immersive experience screens are raised</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="3_no" name="m03" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="3_yes" name="m03" value="20">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 4 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M04</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>MASTERPIECE 🎨</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>Your team's LEGO® art piece is at least partly in the museum target area</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="4a_no" name="m04a" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="4a_yes" name="m04a" value="10">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The art piece is completely supported by the pedestal</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="4b_no" name="m04b" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="4b_yes" name="m04b" value="20">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 5 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M05</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>AR STATUE 🪻</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The augmented reality statue's orange lever is rotated completely to the right</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="5_no" name="m05" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="5_yes" name="m05" value="30">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 6 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M06</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>MUSIC CONCERT LIGHTS & SOUND</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The lights' orange lever is rotated completely downwards</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="6_no" name="m06a" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="6_yes" name="m06a" value="10">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The speakers' orange lever is rotated completely to the left</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="6b_no" name="m06b" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="6b_yes" name="m06b" value="10">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 7 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>MO7</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>HOLOGRAM PERFORMER 🩷</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The hologram performer's orange push activator is completely past the black stage set line</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="7_no" name="m07" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="7_yes" name="m07" value="20">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <!-- MISSION 8 - START HERE! -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M08</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>ROLLING CAMERA 🎥</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The rolling camera's white pointer is left of</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="8_none" name="m08" value="0" class="checkbox" checked="checked">
+                                <span>None</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="8_db" name="m08" value="10">
+                                <span>Dark Blue</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="8_dm" name="m08" value="20" class="checkbox">
+                                <span>Dark & medium blue</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="8_dml" name="m08" value="30">
+                                <span>Dark, medium & light blue</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 9 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M09</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>MOVIE SET ⛵</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The boat is touching the mat and is completely past the black scene line</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="9a_no" name="m09a" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="9a_yes" name="m09a" value="10">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The camera is touching the mat and is at least partly in the camera target area</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="9b_no" name="m09b" value="0" class="checkbox" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="9b_yes" name="m09b" value="10">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 10 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M10</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>SOUND MIXER 🔊</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>Number of sound mixer sliders that are raised</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="10_0" name="m10" value="0" class="checkbox" checked="checked">
+                                <span>None</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="10_1" name="m10" value="10">
+                                <span>1</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="10_2" name="m10" value="20">
+                                <span>2</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="10_3" name="m10" value="30">
+                                <span>3</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 11 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M11</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>LIGHT SHOW 💡</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The light show's white pointer is within zone</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="11_none" name="m11" value="0" class="checkbox" checked="checked">
+                                <span>None</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="11_yellow" name="m11" value="10">
+                                <span>Yellow</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="11_green" name="m11" value="20">
+                                <span>Green</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="11_blue" name="m11" value="30">
+                                <span>Blue</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 12 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M12</h2>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <h2>VR ARTIST 🐔</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The chicken is intact and has moved from its starting position</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="12a_no" name="m12a" value="0" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="12a_yes" name="m12a" value="10">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The chicken is over or completely past the lavender dot</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="12b_no" name="m12b" value="0" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="12b_yes" name="m12b" value="20">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 13 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M13</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>CRAFT CREATOR 🖌️</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The craft machine's orange and white lid is completely open</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="13a_no" name="m13a" value="0" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="13a_yes" name="m13a" value="10">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>The craft machine's light pink latch is pointing straight down</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="13b_no" name="m13b" value="0" checked="checked">
+                                <span>No</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="13b_yes" name="m13b" value="20">
+                                <span>Yes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 14 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M14</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>AUDIENCE DELIVERY</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>Number of audience members completely in a target destination</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="14a_0" name="m14a" value="0" checked="checked">
+                                <span>0</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14a_1" name="m14a" value="5">
+                                <span>1</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14a_2" name="m14a" value="10">
+                                <span>2</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14a_3" name="m14a" value="15">
+                                <span>3</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14a_4" name="m14a" value="20">
+                                <span>4</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14a_5" name="m14a" value="25">
+                                <span>5</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14a_6" name="m14a" value="30">
+                                <span>6</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14a_7" name="m14a" value="35">
+                                <span>7</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>Target destinations with at least one audience member completely in it</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="14b_0" name="m14b" value="0" checked="checked">
+                                <span>0</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14b_1" name="m14b" value="5">
+                                <span>1</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14b_2" name="m14b" value="10">
+                                <span>2</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14b_3" name="m14b" value="15">
+                                <span>3</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14b_4" name="m14b" value="20">
+                                <span>4</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14b_5" name="m14b" value="25">
+                                <span>5</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14b_6" name="m14b" value="30">
+                                <span>6</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="14b_7" name="m14b" value="35">
+                                <span>7</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MISSION 15 -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>M15</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>EXPERT DELIVERY</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>Number of experts at least partly in their target destinations</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="15_0" name="m15" value="0" checked="checked">
+                                <span>0</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="15_1" name="m15" value="10">
+                                <span>1</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="15_2" name="m15" value="20">
+                                <span>2</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="15_3" name="m15" value="30">
+                                <span>3</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="15_4" name="m15" value="40">
+                                <span>4</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="15_5" name="m15" value="50">
+                                <span>5</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PRECISION TOKENS -->
+            <div class="row outer bg-primary-subtle">
+                <div class="col-2">
+                    <h2>PT</h2>
+                </div>
+                <div class="col-10">
+                    <div class='row'>
+                        <h2>PRECISION TOKENS 🧐</h2>
+                    </div>
+                    <div class='row'>
+                        <div class='col-7'>
+                            <p>Number of precision tokens remaining</p>
+                        </div>
+                        <div class='col-5'>
+                            <label>
+                                <input type="radio" id="pt_0" name="pt" value="0">
+                                <span>0</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="pt_1" name="pt" value="10">
+                                <span>1</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="pt_2" name="pt" value="15">
+                                <span>2</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="pt_3" name="pt" value="25">
+                                <span>3</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="pt_4" name="pt" value="35">
+                                <span>4</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="pt_5" name="pt" value="50">
+                                <span>5</span>
+                            </label>
+                            <label>
+                                <input type="radio" id="pt_6" name="pt" value="50" checked="checked">
+                                <span>6</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- GRACIOUS PROFESSIONALISM -->
+            <!--<div class="row outer bg-primary-subtle">-->
+            <!--    <div class="col-2">-->
+            <!--        <h2>GP</h2>-->
+            <!--    </div>-->
+            <!--    <div class="col-10">-->
+            <!--        <div class='row'>-->
+            <!--            <h2>GRACIOUS PROFESSIONALISM</h2>-->
+            <!--        </div>-->
+            <!--        <div class='row'>-->
+            <!--            <div class='col-7'>-->
+            <!--                <p>Gracious Professionalism® displayed at the robot game table:</p>-->
+            <!--            </div>-->
+            <!--            <div class='col-5'>-->
+            <!--                <label>-->
+            <!--                    <input type="radio" id="gp_2" name="gp" value="2" checked="checked">-->
+            <!--                    <span>2 Developing</span>-->
+            <!--                </label>-->
+            <!--                <label>-->
+            <!--                    <input type="radio" id="gp_3" name="gp" value="3">-->
+            <!--                    <span>3 Accomplished</span>-->
+            <!--                </label>-->
+            <!--                <label>-->
+            <!--                    <input type="radio" id="gp_4" name="gp" value="4">-->
+            <!--                    <span>4 Exceeds</span>-->
+            <!--                </label>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</div>-->
+            
+            
+        <!-- Button to go to top of screen -->
+        <button id="toTop" title="Go to top">Top</button>    
+            
+        <!-- end container-->
+        </div>
+        
+        <script src="calc.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

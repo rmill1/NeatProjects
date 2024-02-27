@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: Roboto;
+}
+
+h1, h2 {
+    font-family: Lilita One;
+}
+
+.outer {
+    padding: 1%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+#calculate {
+    /*margin-top: 9%;*/
+}
+
+.col-5 {
+    padding-left: 15px;
+}
+
+input[type="radio"] {
+    border: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+#title {
+    padding: 1% 5%;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+
+/* toTop Button styling - from W3Schools */
+#toTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at bottom of page */
+  right: 0.8%; /* Place the button 20px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#toTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
