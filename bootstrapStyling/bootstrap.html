@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bootstrap Styling</title>
+	<link rel="stylesheet" href="bootstrap.css">
+	<!-- Link to Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="text-center">
+  <h1 class="mb-1 mt-1">Bootstrap Styling Examples</h1>
+
+	<!-- Text output div -->
+	<div id="output" class="mt-3 mb-2 px-5 py-3 border border-black w-50 ms-auto me-auto">
+		<p>This text will change based on the Bootstrap classes you toggle</p>
+	</div>
+
+	<!-- Container of buttons in a grid -->
+	<div class="container mt-2">
+
+		<!-- ROW 1: TEXT-START/CENTER/END -->
+		<div class="row py-1 fw-bold bg-primary-subtle">
+				<p class="mt-2">Example Bootstrap classes for <a href="https://getbootstrap.com/docs/5.3/utilities/text/#text-alignment" target="_blank">text alignment</a></p>
+			</div>
+		<div class="row py-1 bg-primary-subtle">
+			<div class="col-4">
+				<p>text-start</p>
+				<label class="switch">
+				  <input type="checkbox" id="textstart">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>text-center</p>
+				<label class="switch">
+				  <input type="checkbox" id="textcenter">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>text-end</p>
+				<label class="switch">
+				  <input type="checkbox" id="textend">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+		<!-- End row -->
+		</div>
+
+
+		<!-- ROW 2: FW-BOLD/NORMAL/LIGHT -->
+		<div class="row py-1 fw-bold bg-success-subtle">
+				<p>Example Bootstrap classes for <a href="https://getbootstrap.com/docs/5.3/utilities/text/#font-weight-and-italics" target="_blank">font weight</a></p>
+			</div>
+		<div class="row py-1 bg-success-subtle">
+			<div class="col-4">
+				<p>fw-light</p>
+				<label class="switch">
+				  <input type="checkbox" id="fwlight">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>fw-normal</p>
+				<label class="switch">
+				  <input type="checkbox" id="fwnormal">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>fw-bold</p>
+				<label class="switch">
+				  <input type="checkbox" id="fwbold">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+		<!-- End row -->
+		</div>
+
+		<!-- ROW 3: FONT SIZE -->
+		<div class="row py-1 fw-bold bg-warning-subtle">
+				<p>Example Bootstrap classes for <a href="https://getbootstrap.com/docs/5.3/utilities/text/#font-size" target="_blank">font size</a></p>
+			</div>
+		<div class="row py-1 bg-warning-subtle">
+			<div class="col-4">
+				<p>fs-1</p>
+				<label class="switch">
+				  <input type="checkbox" id="fs1">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>fs-3</p>
+				<label class="switch">
+				  <input type="checkbox" id="fs3">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>fs-6</p>
+				<label class="switch">
+				  <input type="checkbox" id="fs6">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+		<!-- End row -->
+		</div>
+
+		<!-- ROW 4: BACKGROUND COLOR -->
+		<div class="row py-1 fw-bold bg-danger-subtle">
+				<p>Example Bootstrap classes for <a href="https://getbootstrap.com/docs/5.3/utilities/background/#background-color" target="_blank">background color</a></p>
+			</div>
+		<div class="row py-1 bg-danger-subtle">
+			<div class="col-4">
+				<p>text-bg-primary</p>
+				<label class="switch">
+				  <input type="checkbox" id="tbp">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>text-bg-success</p>
+				<label class="switch">
+				  <input type="checkbox" id="tbs">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+			<div class="col-4">
+				<p>text-bg-danger</p>
+				<label class="switch">
+				  <input type="checkbox" id="tbd">
+				  <span class="slider round"></span>
+				</label>
+			</div>
+		<!-- End row -->
+		</div>
+
+		<!-- ROW 5 - Toggle grid borders -->
+		<div class="row">
+			<button id="borders" class="btn btn-dark w-25 ms-auto me-auto mt-4 mb-3">Toggle Grid Borders</button>
+		</div>
+	<!-- End container -->
+	</div>
+  
+	
+	<!-- Link to local JS -->
+	<script src="bootstrap.js"></script>
+	<!-- Link to Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	  
+</body>
+
+</html>
