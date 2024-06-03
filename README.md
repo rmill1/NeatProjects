@@ -23,3 +23,5 @@ Ranging from silly and fun to actually quite useful in the varioius roles I've h
 6. Fancy Seating Chart Generator 
   * Click your own seating chart given the number of students in the class and the arrangement of desks on a given day
   * HTML/CSS/JavaScript
+7. Flexbox Cheatsheet
+  * I can never remember the main from the cross axis so I made a cheatsheet to illustrate flexbox, also to help my students understand some of what flexbox can do for positioning
